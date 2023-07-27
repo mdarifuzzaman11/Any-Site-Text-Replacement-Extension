@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Any Site Text Replacement Extension",
+  "version": "1.0",
+  "description": "A Chrome extension for searching and replacing text on webpages",
+  "author": "Md Arifuzzaman",
+  "commands": {
+    "search_replace": {
+      "suggested_key": {
+        "default": "Ctrl+T",
+        "mac": "Command+T"
+      },
+      "description": "Search and Replace"
+    }
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["tabs"]
+}
